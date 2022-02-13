@@ -12,6 +12,7 @@
         <div class="spacer"></div>
         {{partial "darkmode.html" .}}
     </header>
+    {{partial "menu.html" .}}
     <article>
         {{ if (and $.Site.Data.config.enableToc (not (.Params.disableToc))) }}
         <aside class="mainTOC">
