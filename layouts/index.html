@@ -4,7 +4,7 @@
 
 <body>
 {{partial "search.html" .}}
-<div class="singlePage">
+<div class="centeredPage">
     <!-- Begin actual content -->
     <header>
         <h1>{{if .Title}}{{ .Title }}{{else}}Untitled{{end}}</h1>
@@ -22,7 +22,6 @@
         {{end}}
         {{- .Content -}}
     </article>
-    {{partial "footer.html" .}}
 </div>
 </body>
 </html>
