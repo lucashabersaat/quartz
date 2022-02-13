@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lucas Habersaat | Resume</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <style>
+    * {
+      border:0;
+      font:inherit;
+      font-size:100%;
+      vertical-align:baseline;
+      margin:0;
+      padding:0;
+      color: black;
+      text-decoration-skip: ink;
+    }
+
+    body {
+      font-family:'Open Sans', 'Myriad Pro', Myriad, sans-serif;
+      font-size:17px;
+      line-height:160%;
+      color:#1d1313;
+      max-width:700px;
+      margin:auto;
+    }
+
+    p {
+      margin: 20px 0;
+    }
+
+    a img {
+      border:none;
+    }
+
+    img {
+      margin: 10px auto 10px auto;
+      max-width: 100%;
+      display: block;
+    }
+
+    .left-justify { float: left; }
+    .right-justify { float:right; }
+
+    pre, code {
+      font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+      background-color: #f7f7f7;
+    }
+
+    code {
+      font-size: 12px;
+      padding: 4px;
+    }
+
+    pre {
+      margin-top: 0;
+      margin-bottom: 16px;
+      word-wrap: normal;
+      padding: 16px;
+      overflow: auto;
+      font-size: 85%;
+      line-height: 1.45;
+    }
+
+    pre>code {
+      padding: 0;
+      margin: 0;
+      font-size: 100%;
+      word-break: normal;
+      white-space: pre;
+      background: transparent;
+      border: 0;
+    }
+
+    pre code {
+      display: inline;
+      padding: 0;
+      margin: 0;
+      overflow: visible;
+      line-height: inherit;
+      word-wrap: normal;
+      background-color: transparent;
+      border: 0;
+    }
+
+    pre code::before,
+    pre code::after {
+      content: normal;
+    }
+
+    em,q,em,dfn {
+      font-style:italic;
+    }
+
+    .sans,html .gist .gist-file .gist-meta {
+      font-family:"Open Sans","Myriad Pro",Myriad,sans-serif;
+    }
+
+    .mono,pre,code,tt,p code,li code {
+      font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+    }
+
+    .heading,.serif,h1,h2,h3 {
+      font-family:"Old Standard TT",serif;
+    }
+
+    strong {
+      font-weight:600;
+    }
+
+    q:before {
+      content:"\201C";
+    }
+
+    q:after {
+      content:"\201D";
+    }
+
+    del,s {
+      text-decoration:line-through;
+    }
+
+    blockquote {
+      font-family:"Old Standard TT",serif;
+      text-align:center;
+      padding:50px;
+    }
+
+    blockquote p {
+      display:inline-block;
+      font-style:italic;
+    }
+
+    blockquote:before,blockquote:after {
+      font-family:"Old Standard TT",serif;
+      content:'\201C';
+      font-size:35px;
+      color:#403c3b;
+    }
+
+    blockquote:after {
+      content:'\201D';
+    }
+
+    hr {
+      width:40%;
+      height: 1px;
+      background:#403c3b;
+      margin: 25px auto;
+    }
+
+    h1 {
+      font-size:35px;
+    }
+
+    h2 {
+      font-size:28px;
+    }
+
+    h3 {
+      font-size:22px;
+      margin-top:18px;
+    }
+
+    h1 a,h2 a,h3 a {
+      text-decoration:none;
+    }
+
+    h1,h2 {
+      margin-top:28px;
+    }
+
+    #sub-header, .date {
+      color:#403c3b;
+      font-size:13px;
+    }
+
+    #sub-header {
+      margin: 0 4px;
+    }
+
+    #nav h1 a {
+      font-size:35px;
+      color:#1d1313;
+      line-height:120%;
+    }
+
+    .posts_listing a,#nav a {
+      text-decoration: none;
+    }
+
+    li {
+      margin-left: 20px;
+    }
+
+    ul li {
+      margin-left: 5px;
+    }
+
+    ul li {
+      list-style-type: none;
+    }
+    ul li:before {
+      content:"\00BB \0020";
+    }
+
+    #nav ul li:before, .posts_listing li:before {
+      content:'';
+      margin-right:0;
+    }
+
+    #content {
+      text-align:left;
+      width:100%;
+      font-size:15px;
+      padding:60px 0 80px;
+    }
+
+    #content h1,#content h2 {
+      margin-bottom:5px;
+    }
+
+    #content h2 {
+      font-size:25px;
+    }
+
+    #content .entry-content {
+      margin-top:15px;
+    }
+
+    #content .date {
+      margin-left:3px;
+    }
+
+    #content h1 {
+      font-size:30px;
+    }
+
+    #footer {
+        text-align: center;
+    }
+
+    .highlight {
+      margin: 10px 0;
+    }
+
+    .posts_listing {
+      margin:0 0 50px;
+    }
+
+    .posts_listing li {
+      margin:0 0 25px 15px;
+    }
+
+    .posts_listing li a:hover,#nav a:hover {
+      text-decoration: underline;
+    }
+
+    #nav {
+      text-align:center;
+      position:static;
+      margin-top:60px;
+    }
+
+    #nav ul {
+      display: table;
+      margin: 8px auto 0 auto;
+    }
+
+    #nav li {
+      list-style-type:none;
+      display:table-cell;
+      font-size:15px;
+      padding: 0 20px;
+    }
+
+    #links {
+      display: flex;
+      justify-content: space-between;
+      margin: 50px 0 0 0;
+    }
+
+    #links :nth-child(1) {
+      margin-right:0.5em;;
+    }
+
+    #links :nth-child(2) {
+      margin-left:0.5em;;
+    }
+
+    #not-found {
+      text-align: center;
+    }
+
+    #not-found a {
+      font-family:"Old Standard TT",serif;
+      font-size: 200px;
+      text-decoration: none;
+      display: inline-block;
+      padding-top: 225px;
+    }
+
+    @media (max-width: 750px) {
+      body {
+        padding-left:20px;
+        padding-right:20px;
+      }
+
+      #nav h1 a {
+        font-size:28px;
+      }
+
+      #nav li {
+        font-size:13px;
+        padding: 0 15px;
+      }
+
+      #content {
+        margin-top:0;
+        padding-top:50px;
+        font-size:14px;
+      }
+
+      #content h1 {
+        font-size:25px;
+      }
+
+      #content h2 {
+        font-size:22px;
+      }
+
+      .posts_listing li div {
+        font-size:12px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      body {
+        padding-left:20px;
+        padding-right:20px;
+      }
+
+      #nav h1 a {
+        font-size:22px;
+      }
+
+      #nav li {
+        font-size:12px;
+        padding: 0 10px;
+      }
+
+      #content {
+        margin-top:0;
+        padding-top:20px;
+        font-size:12px;
+      }
+
+      #content h1 {
+        font-size:20px;
+      }
+
+      #content h2 {
+        font-size:18px;
+      }
+
+      .posts_listing li div{
+        font-size:12px;
+      }
+    }
+    /*
+    @media (prefers-color-scheme: dark) {
+      *, #nav h1 a {
+        color: #FDFDFD;
+      }
+
+      body {
+        background: #121212;
+      }
+
+      pre, code {
+        background-color: #262626;
+      }
+
+      #sub-header, .date {
+        color: #BABABA;
+      }
+
+      hr {
+        background: #EBEBEB;
+      }
+    }
+    */
+
+    #resume {
+      margin-bottom: 300px;
+    }
+
+    #resume > div { /* section */
+      margin-bottom: 40px;
+    }
+
+    #resume > div > div { /* row */
+      display: flex;
+      margin-bottom: 6px;
+      line-height: 1.3;
+      border-bottom: 1px solid #F4F4F4;
+    }
+    #resume > div > div:last-child { /* row */
+      border-bottom: none;
+    }
+
+    #resume > div > div > div:nth-child(0n+2) {
+      width: 60%;
+      padding-left: 10px;
+
+    }
+
+    #resume > div > div > div:first-child {
+        width: 30%;
+        text-align: right;
+        padding-right: 10px;
+        color: #808080;
+    }
+
+    #resume > div > div > div:nth-child(0n+2) > div:last-child {
+      color: #404040;
+      margin-bottom: 4px;
+    }
+    #resume > div > div > div:nth-child(0n+2) > div:last-child::before {
+      content: "→ ";
+    }
+
+
+    #resume div.section_title {
+      margin-bottom: 10px;
+    }
+
+    #resume div.section_title > div > h2 {
+      color: #808080;
+      font-family: inherit;
+
+    }
+
+    .name_section img {
+       border-radius: 50%;
+       width: 120px;
+       margin-right: 0px;
+    }
+    .name_section > div:last-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .grey {
+      color: #808080;
+    }
+    .mid-grey {
+      color: #404040;
+    }
+
+    .name_section > div:last-child > h1 {
+      margin-top: 0px;
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    @media print {
+      .pagebreak {
+        border: none;
+        page-break-before: always;
+      } /* page-break-after works, as well */
+    }
+
+  </style>
+
+
+</head>
+
+
+<body>
+
+<section id="resume">
+  <div>
+    <div class="name_section">
+      <div><img src="portrait_circle_small.png" alt="."></div>
+      <div>
+        <h1>Lucas Habersaat</h1><br>
+        <span class="grey">
+          Curriculum Vitae | 26.8.2021
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+  <div>
+    <div>
+      <div>birthdate</div>
+      <div>28.01.1997</div>
+    </div>
+    <div>
+      <div>address</div>
+      <div>Marktstrasse 12<br>8500 Frauenfeld<br>Switzerland</div>
+    </div>
+
+    <div>
+      <div>e-mail</div>
+      <div><a href="mailto:lucas@habersaat.ch">lucas@habersaat.ch</a></div>
+    </div>
+    <div>
+      <div>mobile</div>
+      <div>+41 79 590 67 97</div>
+    </div>
+  </div>
+
+  <div>
+    <div class="section_title">
+      <div></div>
+      <div><h2>Education</h2></div>
+    </div>
+    <div>
+      <div>2019 - now</div>
+      <div>
+        <div>Master of Computer Science</div>
+        <div>ETH Zurich</div>
+      </div>
+    </div>
+    <div>
+      <div>2015 - 2020</div>
+      <div>
+        <div>Bachelor of Computer Science</div>
+        <div>ETH Zurich</div>
+      </div>
+
+
+    </div>
+    <div>
+      <div>2012 - 2015</div>
+      <div>
+        <div>Qualification for University</div>
+        <div>Kantonsschule Frauenfeld</div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <div>
+    <div class="section_title">
+      <div></div>
+      <div><h2>Work Experience</h2></div>
+    </div>
+    <div>
+      <div>August - October 2021</div>
+      <div>
+        <div>Assistant Lecturer</div>
+        <div>Kantonsschule Frauenfeld</div>
+      </div>
+    </div>
+    <div>
+      <div>April 2019 - now</div>
+      <div>
+        <div>Webdesign</div>
+        <div><a href="https://baselfilmfestival.ch"target="_blank">Gässli Filmfestival</a></div>
+      </div>
+    </div>
+    <div>
+      <div>March 2020 - April 2021</div>
+      <div>
+        <div>Internship SW Engineering</div>
+        <div><a href="https://puzzle.ch" target="_blank">Puzzle ITC</a></div>
+      </div>
+    </div>
+    <div>
+      <div>August 2015</div>
+      <div>
+        <div>Internship GUI</div>
+        <div><a href="https://www.ghielmetti.ch/de/startseite-1.html" target="_blank">Ghielmetti AG</a></div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="pagebreak"> </div>
+
+  <div>
+    <div class="section_title">
+      <div></div>
+      <div><h2>Other Activities</h2></div>
+    </div>
+    <div>
+      <div>February - July 2018</div>
+      <div>Tutoring at Kantonsschule Frauenfeld</div>
+    </div>
+    <div>
+      <div>2020 - now</div>
+      <div>Club board (<a href="https://scpfadifrauenfeld.ch/" target="_blank">SC Pfadi</a>, sports)</div>
+    </div>
+    <div>
+      <div>2016 - now</div>
+      <div>Co-leading of yearly children summer camps</div>
+    </div>
+  </div>
+
+  <div>
+    <div class="section_title">
+      <div></div>
+      <div><h2>Skills</h2></div>
+    </div>
+    <div>
+      <div>language</div>
+      <div>German (native), English (proficient), French (mediocre)</div>
+    </div>
+    <div>
+      <div>programming</div>
+      <div>C# | C++ | Python | Java | Ruby</div>
+    </div>
+    <div>
+      <div>web</div>
+      <div>HTML | CSS | JS | PHP | SQL & various frameworks</div>
+    </div>
+    <!--<div>
+      <div>machine learning</div>
+      <div>PyTorch | TensorFlow</div>
+    </div>-->
+  </div>
+
+  <div>
+    <div class="section_title">
+      <div></div>
+      <div><h2>Projects</h2></div>
+    </div>
+    <div>
+      <div>Bachelor & Semester Thesis</div>
+      <div>
+        <div>Inverse Terrain Simulation</div>
+        <div><a href="https://cgl.ethz.ch/" target="_blank">Computer Graphics Lab</a> at ETH Zurich</div>
+      </div>
+    </div>
+    <div>
+      <div>Webapp</div>
+      <div>
+        <div><a href="https://github.com/puzzle/cryptopus" target="_blank">Cryptopus</a> - open source password manager</div>
+        <div>Puzzle ITC</div>
+      </div>
+    </div>
+    <div>
+      <div>Personal Webapp</div>
+      <div>Spoilerfree Online <a href="https://glossary.lucashabersaat.ch" target="_blank">Glossary</a></div>
+    </div>
+
+    <div>
+      <div>Website</div>
+      <div>Personal <a href="https://lucashabersaat.ch" target="_blank">Website & Blog</a></div>
+    </div>
+
+
+    <div>
+      <div>Various</div>
+      <div>Course Projects</div>
+    </div>
+
+  </div>
+
+  <div>
+    <div class="section_title">
+      <div></div>
+      <div><h2>Hobbies & Interests</h2></div>
+    </div>
+
+    <div>
+      <div>Music</div>
+      <div>Playing piano and harmonica and <br>listening to epic & film music in particular</div>
+    </div>
+    <div>
+      <div>Sport</div>
+      <div>Handball since 3rd grade, swimming, jogging</div>
+    </div>
+    <div>
+      <div>Reading</div>
+      <div>Mainly fantasy epics & non-fiction like science, psychology & productivity</div>
+    </div>
+    <div>
+      <div>Gaming</div>
+      <div>Too much honestly</div>
+    </div>
+    <div>
+      <div>Coding</div>
+      <div>Personal projects in area of web-apps, game design and computer graphics in general</div>
+    </div>
+
+  </div>
+
+  <div>
+    <div class="section_title">
+      <div></div>
+      <div><h2>References</h2></div>
+    </div>
+
+    <div>
+      <div>Gässli Filmfestival</div>
+      <div>Giacun Caduff<br><a href="mailto:jab@jabpix.com">jab@jabpix.com</a><br>+41 78 639 84 08</div>
+    </div>
+    <div>
+      <div>Puzzle ITC</div>
+      <div>Pascal Simon<br><a href="mailto:simon@puzzle.ch">simon@puzzle.ch</a><br>+41 78 730 57 67</div>
+    </div>
+    <!--<div>
+      <div>CGL at ETH</div>
+      <div>Guillaume Cordonnier & Jingwei Tang</div>
+    </div>-->
+  </div>
+
+</section>
+
+
+
+</body>
+</html>

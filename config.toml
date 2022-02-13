@@ -37,3 +37,7 @@ enableGitInfo = true
     name = "About"
     url = "/about"
     weight = "2"
+[[menu.main]]
+    name = "Glossary"
+    url = "https://glossary.lucashabersaat.ch"
+    weight = "3"
