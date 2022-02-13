@@ -5,11 +5,13 @@
     {{$curPage := strings.TrimPrefix $host (strings.TrimRight "/" .Page.RelPermalink) }}
     {{$inbound := index $.Site.Data.linkIndex.index.backlinks $curPage}}
     {{$contentTable := $.Site.Data.contentIndex}}
+
     {{if $inbound}}
     {{$cleanedInbound := apply (apply $inbound "index" "." "source") "replace" "." " " "-"}}
     {{- range $cleanedInbound | uniq -}}
-        <li>
-            <a href="{{.}}">{{index (index $contentTable .) "title"}}</a>
+        <li>			
+			{{$t := index $contentTable (replace . "/" "\\")}}
+            <a href="{{.}}">{{index $t "title"}}</a>
         </li>
     {{- end -}}
     {{else}}
