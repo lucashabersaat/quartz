@@ -1,6 +1,7 @@
 ---
 title: "Spoiler-Free Book Glossary"
 date: 2021-10-10T17:27:39+02:00
+is_post: true
 ---
 
 As a hardcore fantasy literature lover and enjoyer of especially thick books and series, I encountered the limitations of my brain‘s ability to keep track of all the characters. *Wheel of Time* being my favorite so far is an especially tricky one with 14 books. In such a series it is common for the authors to also add small hints and foreshadowing facts, that obviously mean something in the future. However, at the current chapter they are only mystery.

@@ -1,6 +1,7 @@
 ---
 title: "Astro Photography"
 date: 2021-10-24T13:20:47+02:00
+is_post: true
 ---
 
 
