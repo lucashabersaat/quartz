@@ -7,7 +7,11 @@
                 <p>{{- .Summary -}}{{if .Truncated}}...{{end}}</p>
             </div>
             <p class="meta">
-                {{ .ReadingTime }} minute read. {{if eq .Params.is_post true}} {{.Date.Format "January 2, 2006"}} {{else}}Last updated {{if ne .Date .Lastmod}}{{ .Lastmod.Format "January 2, 2006" }}{{else}}Unknown{{end}}{{end}}
+                {{ if eq .Section "posts"}}
+                    {{partial "meta/post.html" .}}
+                {{else}}
+                    {{partial "meta/default.html" .}}
+                {{end}}
             </p>
         </div>
     </li>

@@ -14,15 +14,13 @@
   </header>
   <article>
       {{if .Title}}<h1>{{ .Title }}</h1>{{end}}
-      {{if eq .Params.is_post true}}
       <p class="meta">
-          {{if .Date }}{{ .Date.Format "January 2, 2006" }}{{else}}Unknown{{end}}
-      </p>
+      {{if eq .Section "posts"}}
+        {{partial "meta/post.html" .}}
       {{else}}
-      <p class="meta">
-          Last updated {{if ne .Date .Lastmod}}{{ .Lastmod.Format "January 2, 2006" }}{{else}}Unknown{{end}}
-      </p>
+        {{partial "meta/default.html" .}}
       {{end}}
+      </p>
       <ul class="tags">
           {{ range (.GetTerms "tags") }}
           <li><a href="{{ .Permalink }}">{{ .LinkTitle | humanize }}</a></li>
