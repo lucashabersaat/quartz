@@ -6,13 +6,7 @@
                 <h3><a href="{{ .Permalink }}">{{- .Title -}}</a></h3>
                 <p>{{- .Summary -}}{{if .Truncated}}...{{end}}</p>
             </div>
-            <p class="meta">
-                {{ if eq .Section "posts"}}
-                    {{partial "meta/post.html" .}}
-                {{else}}
-                    {{partial "meta/default.html" .}}
-                {{end}}
-            </p>
+            {{partial "meta.html" .}}
         </div>
     </li>
     {{- end -}}

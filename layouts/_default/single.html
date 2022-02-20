@@ -14,13 +14,7 @@
   </header>
   <article>
       {{if .Title}}<h1>{{ .Title }}</h1>{{end}}
-      <p class="meta">
-      {{if eq .Section "posts"}}
-        {{partial "meta/post.html" .}}
-      {{else}}
-        {{partial "meta/default.html" .}}
-      {{end}}
-      </p>
+      {{partial "meta.html" .}}
       <ul class="tags">
           {{ range (.GetTerms "tags") }}
           <li><a href="{{ .Permalink }}">{{ .LinkTitle | humanize }}</a></li>
