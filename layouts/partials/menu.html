@@ -1,3 +1,7 @@
+<div style="display: flex; flex-wrap: wrap;">
 {{range .Site.Menus.main }}
-    <a href="{{ .URL }}">{{ .Name }}</a>
+    <div style="margin-right: 10px">
+        <a href="{{ .URL }}">{{ .Name }}</a>
+    </div>
 {{ end }}
+</div>

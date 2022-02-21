@@ -274,6 +274,11 @@ hr {
 
 .centeredPage {
   padding: 30vh 30vh;
+  font-size: 1.5em;
+  @media all and (max-width: 1200px) {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 }
 
 .page-end {
