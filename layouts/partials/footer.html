@@ -1,11 +1,12 @@
 <hr/>
-<div class="page-end">
-    <div class="backlinks-container">
-        {{partial "backlinks.html" .}}
+{{ if ne .Section "posts"}}
+    <div class="page-end">
+        <div class="backlinks-container">
+            {{partial "backlinks.html" .}}
+        </div>
+        <div>
+            {{partial "graph.html" .}}
+        </div>
     </div>
-    <div>
-        {{partial "graph.html" .}}
-    </div>
-</div>
-
+{{ end }}
 {{partial "contact.html" .}}
