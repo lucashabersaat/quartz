@@ -4,7 +4,7 @@
 {{$email := strings.HasPrefix $trimmed "mailto"}}
 
 {{- if $email -}}
-<a href="mailto:{{ $trimmed }}" rel="noopener">{{ .Text | safeHTML }}</a>
+<a href="{{ $trimmed }}" rel="noopener">{{ .Text | safeHTML }}</a>
 {{- else -}}
 {{- if $external -}}
 <a href="{{ $trimmed }}" rel="noopener">{{ .Text | safeHTML }}</a>
