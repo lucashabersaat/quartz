@@ -2,4 +2,4 @@
 title: Lucas Habersaat
 disableToc: true
 ---
-lucas@habersaat.ch
+[lucas@habersaat.ch](mailto:lucas@habersaat.ch)
