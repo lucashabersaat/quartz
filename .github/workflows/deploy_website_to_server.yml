@@ -32,7 +32,9 @@ jobs:
         extended: true
       
     - name: Build
-      run: hugo
+      run: |
+        hugo version
+        hugo
 
     - name: Copy to webserver
       run: rsync --delete -rvzh ./public/ root@${{ secrets.SSH_HOST }}:/var/www/lucashabersaat.ch/public_html/
