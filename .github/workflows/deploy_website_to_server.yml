@@ -2,7 +2,7 @@ name: Build and Deploy
 
 on:
   push:
-    branches: [ main ]
+    branches: [ hugo ]
 jobs:
   build:
     name: Build and Deploy
@@ -32,9 +32,7 @@ jobs:
         extended: true
       
     - name: Build
-      run: |
-        hugo version
-        hugo
+      run: hugo
 
     - name: Copy to webserver
       run: rsync --delete -rvzh ./public/ root@${{ secrets.SSH_HOST }}:/var/www/lucashabersaat.ch/public_html/
