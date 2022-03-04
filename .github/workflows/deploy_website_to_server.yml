@@ -1,0 +1,38 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Install SSH key
+      uses: shimataro/ssh-key-action@v2
+      with:
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        known_hosts: 'lol placeholder'
+        
+    - name: Adding Known Hosts
+      run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Load Submodules
+      run: |
+        git submodule init
+        git submodule update
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: '0.69.2'
+        extended: true
+      
+    - name: Build
+      run: hugo
+
+    - name: Copy to webserver
+      run: rsync --delete -rvzh ./public/ root@${{ secrets.SSH_HOST }}:/var/www/lucashabersaat.ch/public_html/
