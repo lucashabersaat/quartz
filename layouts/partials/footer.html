@@ -1,4 +1,5 @@
 <hr/>
+{{ if false}}
 {{ if ne .Section "posts"}}
     <div class="page-end">
         <div class="backlinks-container">
@@ -8,5 +9,6 @@
             {{partial "graph.html" .}}
         </div>
     </div>
+{{ end }}
 {{ end }}
 {{partial "contact.html" .}}
