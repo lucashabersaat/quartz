@@ -2,6 +2,8 @@
 title: "Flow State Summary"
 date: 2023-09-06T08:22:00+02:00
 is_post: true
+aliases:
+    - flow
 summary: How to access peak cognitive performance.
 download: 230906_FlowStateSummary.pdf
 ---

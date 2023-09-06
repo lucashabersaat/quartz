@@ -2,6 +2,7 @@
 title: "This Site & Discovering Hugo"
 date: 2021-07-02T09:43:05+02:00
 is_post: true
+slug: hugo
 ---
 
 This website of mine is set up using the static site generator [Hugo](https://gohugo.io/). Meaning there are no fancy, slow scripts running in the back-end when you open a page. Further, it's markdown, it's fast and it's mighty. It offers a lot of themes and customization and a very clean content management system. The fact, that I'm writing this in markdown and it is shown as a website is very satisfying, in my opinion.
