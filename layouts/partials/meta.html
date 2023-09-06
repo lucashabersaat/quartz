@@ -1,6 +1,11 @@
 <p class="meta">
-{{ if eq .Section "posts"}}
+{{ if eq .Section "posts" }}
     {{if .Date }} {{.Date.Format "2 January 2006"}} {{else}}Unknown{{end}}, {{ .ReadingTime }} minute read.      
+{{else if eq .Section "summaries"}}
+    {{ if .Lastmod}}
+        {{.Lastmod.Format "2 January 2006"}}
+    {{else if .Date }} {{.Date.Format "2 January 2006"}} 
+    {{else}}Unknown{{end}}, {{ .ReadingTime }} minute read.      
 {{else}}
     Last updated: {{if ne .Date .Lastmod}}{{ .Lastmod.Format "2 January 2006" }}{{else}}Unknown{{end}}
 {{end}}

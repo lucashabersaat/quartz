@@ -1,0 +1,19 @@
+<ul class="section-ul">
+    {{- range . -}}
+    <li class="section-li">
+        <div class="section">
+            <div class="desc">
+                <h3><a href="{{ .Permalink }}">{{- .Title -}}</a></h3>
+                <div>
+                    <div style="float: right;">
+                        <a href="{{.Permalink}}{{ .Params.download}}">{{partial "summaries/download_icon"}}</a>
+                    </div>
+
+                    <p>{{- .Summary -}}{{if .Truncated}}...{{end}}</p>
+                </div>
+            </div>
+            {{partial "meta.html" .}}
+        </div>
+    </li>
+    {{- end -}}
+</ul>

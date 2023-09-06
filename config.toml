@@ -32,6 +32,10 @@ enableGitInfo = true
     name = "Blog"
     url = "/posts"
     weight = "1"
+#[[menu.main]]
+#    name = "Summaries"
+#   url = "/summaries"
+#    weight = "1"
 [[menu.main]]
     name = "About"
     url = "/about"
