@@ -3,7 +3,7 @@ title: "Flow State Summary"
 date: 2023-09-06T08:22:00+02:00
 is_post: true
 summary: How to access peak cognitive performance.
-download: 230901_FlowStateSummary.pdf
+download: 230906_FlowStateSummary.pdf
 ---
 
 
@@ -180,4 +180,4 @@ A lion is either sleeping with the pack, or sprinting for a kill, nothing in bet
 >
 > Further, I love the emphasis on **recovery**. It is far from a grinding over-working philosophy. Quite the contrary, Rian knows of the importance of resting and even suggests to compress work.
 > 
-> However, on the other hands it's very much about squeezing every inch of productivity out of your life, which feels **extreme** at times and assumes a strong work ethic.
+> However, on the other hands it's very much about squeezing every inch of productivity out of your life, even with active recovery, which feels **extreme** at times.
