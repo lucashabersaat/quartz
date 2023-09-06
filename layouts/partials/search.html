@@ -1,3 +1,4 @@
+{{ if not .Site.Params.searchDisabled }}
 <div id="search-container">
     <div id="search-space">
         <input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search" placeholder="Search for something...">
@@ -67,6 +68,7 @@
     };
 </script>
 <script>
+    console.log(content)
     const contentIndex = new FlexSearch.Document({
         cache: true,
         charset: "latin:extra",
@@ -253,3 +255,4 @@
     })
 
 </script>
+{{end}}
