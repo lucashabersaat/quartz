@@ -3,33 +3,34 @@
 
 <head>
   <title>Lucas Habersaat | Resume</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <style>
     * {
-      border:0;
-      font:inherit;
-      font-size:100%;
-      vertical-align:baseline;
-      margin:0;
-      padding:0;
+      border: 0;
+      font: inherit;
+      font-size: 100%;
+      vertical-align: baseline;
+      margin: 0;
+      padding: 0;
       color: black;
       text-decoration-skip: ink;
     }
 
     body {
-      font-family:'Open Sans', 'Myriad Pro', Myriad, sans-serif;
-      font-size:17px;
-      line-height:160%;
-      color:#1d1313 !important;
-      max-width:700px;
-      margin:auto;
+      font-family: 'Open Sans', 'Myriad Pro', Myriad, sans-serif;
+      font-size: 17px;
+      line-height: 160%;
+      color: #1d1313 !important;
+      max-width: 700px;
+      margin: auto;
     }
+
     p {
       margin: 20px 0;
     }
 
     a img {
-      border:none;
+      border: none;
     }
 
     img {
@@ -38,10 +39,16 @@
       display: block;
     }
 
-    .left-justify { float: left; }
-    .right-justify { float:right; }
+    .left-justify {
+      float: left;
+    }
 
-    pre, code {
+    .right-justify {
+      float: right;
+    }
+
+    pre,
+    code {
       font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
       background-color: #f7f7f7;
     }
@@ -87,91 +94,110 @@
       content: normal;
     }
 
-    em,q,em,dfn {
-      font-style:italic;
+    em,
+    q,
+    em,
+    dfn {
+      font-style: italic;
     }
 
-    .sans,html .gist .gist-file .gist-meta {
-      font-family:"Open Sans","Myriad Pro",Myriad,sans-serif;
+    .sans,
+    html .gist .gist-file .gist-meta {
+      font-family: "Open Sans", "Myriad Pro", Myriad, sans-serif;
     }
 
-    .mono,pre,code,tt,p code,li code {
-      font-family:Menlo,Monaco,"Andale Mono","lucida console","Courier New",monospace;
+    .mono,
+    pre,
+    code,
+    tt,
+    p code,
+    li code {
+      font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
     }
 
-    .heading,.serif,h1,h2,h3 {
-      font-family:"Old Standard TT",serif;
+    .heading,
+    .serif,
+    h1,
+    h2,
+    h3 {
+      font-family: "Old Standard TT", serif;
     }
 
     strong {
-      font-weight:600;
+      font-weight: 600;
     }
 
     q:before {
-      content:"\201C";
+      content: "\201C";
     }
 
     q:after {
-      content:"\201D";
+      content: "\201D";
     }
 
-    del,s {
-      text-decoration:line-through;
+    del,
+    s {
+      text-decoration: line-through;
     }
 
     blockquote {
-      font-family:"Old Standard TT",serif;
-      text-align:center;
-      padding:50px;
+      font-family: "Old Standard TT", serif;
+      text-align: center;
+      padding: 50px;
     }
 
     blockquote p {
-      display:inline-block;
-      font-style:italic;
+      display: inline-block;
+      font-style: italic;
     }
 
-    blockquote:before,blockquote:after {
-      font-family:"Old Standard TT",serif;
-      content:'\201C';
-      font-size:35px;
-      color:#403c3b !important;
+    blockquote:before,
+    blockquote:after {
+      font-family: "Old Standard TT", serif;
+      content: '\201C';
+      font-size: 35px;
+      color: #403c3b !important;
     }
 
     blockquote:after {
-      content:'\201D';
+      content: '\201D';
     }
 
     hr {
-      width:40%;
+      width: 40%;
       height: 1px;
-      background:#403c3b;
+      background: #403c3b;
       margin: 25px auto;
     }
 
     h1 {
-      font-size:35px;
+      font-size: 35px;
     }
 
     h2 {
-      font-size:28px;
+      font-size: 28px;
     }
 
     h3 {
-      font-size:22px;
-      margin-top:18px;
+      font-size: 22px;
+      margin-top: 18px;
     }
 
-    h1 a,h2 a,h3 a {
-      text-decoration:none;
+    h1 a,
+    h2 a,
+    h3 a {
+      text-decoration: none;
     }
 
-    h1,h2 {
-      margin-top:28px;
+    h1,
+    h2 {
+      margin-top: 28px;
     }
 
-    #sub-header, .date {
-      color:#403c3b !important;
-      font-size:13px;
+    #sub-header,
+    .date {
+      color: #403c3b !important;
+      font-size: 13px;
     }
 
     #sub-header {
@@ -179,12 +205,13 @@
     }
 
     #nav h1 a {
-      font-size:35px;
-      color:#1d1313 !important;
-      line-height:120%;
+      font-size: 35px;
+      color: #1d1313 !important;
+      line-height: 120%;
     }
 
-    .posts_listing a,#nav a {
+    .posts_listing a,
+    #nav a {
       text-decoration: none;
     }
 
@@ -199,44 +226,47 @@
     ul li {
       list-style-type: none;
     }
+
     ul li:before {
-      content:"\00BB \0020";
+      content: "\00BB \0020";
     }
 
-    #nav ul li:before, .posts_listing li:before {
-      content:'';
-      margin-right:0;
+    #nav ul li:before,
+    .posts_listing li:before {
+      content: '';
+      margin-right: 0;
     }
 
     #content {
-      text-align:left;
-      width:100%;
-      font-size:15px;
-      padding:60px 0 80px;
+      text-align: left;
+      width: 100%;
+      font-size: 15px;
+      padding: 60px 0 80px;
     }
 
-    #content h1,#content h2 {
-      margin-bottom:5px;
+    #content h1,
+    #content h2 {
+      margin-bottom: 5px;
     }
 
     #content h2 {
-      font-size:25px;
+      font-size: 25px;
     }
 
     #content .entry-content {
-      margin-top:15px;
+      margin-top: 15px;
     }
 
     #content .date {
-      margin-left:3px;
+      margin-left: 3px;
     }
 
     #content h1 {
-      font-size:30px;
+      font-size: 30px;
     }
 
     #footer {
-        text-align: center;
+      text-align: center;
     }
 
     .highlight {
@@ -244,21 +274,22 @@
     }
 
     .posts_listing {
-      margin:0 0 50px;
+      margin: 0 0 50px;
     }
 
     .posts_listing li {
-      margin:0 0 25px 15px;
+      margin: 0 0 25px 15px;
     }
 
-    .posts_listing li a:hover,#nav a:hover {
+    .posts_listing li a:hover,
+    #nav a:hover {
       text-decoration: underline;
     }
 
     #nav {
-      text-align:center;
-      position:static;
-      margin-top:60px;
+      text-align: center;
+      position: static;
+      margin-top: 60px;
     }
 
     #nav ul {
@@ -267,9 +298,9 @@
     }
 
     #nav li {
-      list-style-type:none;
-      display:table-cell;
-      font-size:15px;
+      list-style-type: none;
+      display: table-cell;
+      font-size: 15px;
       padding: 0 20px;
     }
 
@@ -280,11 +311,13 @@
     }
 
     #links :nth-child(1) {
-      margin-right:0.5em;;
+      margin-right: 0.5em;
+      ;
     }
 
     #links :nth-child(2) {
-      margin-left:0.5em;;
+      margin-left: 0.5em;
+      ;
     }
 
     #not-found {
@@ -292,7 +325,7 @@
     }
 
     #not-found a {
-      font-family:"Old Standard TT",serif;
+      font-family: "Old Standard TT", serif;
       font-size: 200px;
       text-decoration: none;
       display: inline-block;
@@ -310,71 +343,72 @@
 
     @media (max-width: 750px) {
       body {
-        padding-left:20px;
-        padding-right:20px;
+        padding-left: 20px;
+        padding-right: 20px;
       }
 
       #nav h1 a {
-        font-size:28px;
+        font-size: 28px;
       }
 
       #nav li {
-        font-size:13px;
+        font-size: 13px;
         padding: 0 15px;
       }
 
       #content {
-        margin-top:0;
-        padding-top:50px;
-        font-size:14px;
+        margin-top: 0;
+        padding-top: 50px;
+        font-size: 14px;
       }
 
       #content h1 {
-        font-size:25px;
+        font-size: 25px;
       }
 
       #content h2 {
-        font-size:22px;
+        font-size: 22px;
       }
 
       .posts_listing li div {
-        font-size:12px;
+        font-size: 12px;
       }
     }
 
     @media (max-width: 400px) {
       body {
-        padding-left:20px;
-        padding-right:20px;
+        padding-left: 20px;
+        padding-right: 20px;
       }
 
       #nav h1 a {
-        font-size:22px;
+        font-size: 22px;
       }
 
       #nav li {
-        font-size:12px;
+        font-size: 12px;
         padding: 0 10px;
       }
 
       #content {
-        margin-top:0;
-        padding-top:20px;
-        font-size:12px;
+        margin-top: 0;
+        padding-top: 20px;
+        font-size: 12px;
       }
 
       #content h1 {
-        font-size:20px;
+        font-size: 20px;
       }
 
       #content h2 {
-        font-size:18px;
+        font-size: 18px;
       }
 
-      .posts_listing li div{
-        font-size:12px;
+      .posts_listing li div {
+        font-size: 12px;
       }
     }
+
     /*
     @media (prefers-color-scheme: dark) {
       *, #nav h1 a {
@@ -403,39 +437,44 @@
       margin-bottom: 300px;
     }
 
-    #resume > div { /* section */
+    #resume>div {
+      /* section */
       margin-bottom: 40px;
     }
 
-    #resume > div > div { /* row */
+    #resume>div>div {
+      /* row */
       display: flex;
       margin-bottom: 6px;
       padding-bottom: 6px;
       line-height: 1.3;
       border-bottom: 1px solid #F4F4F4;
     }
-    #resume > div > div:last-child { /* row */
+
+    #resume>div>div:last-child {
+      /* row */
       border-bottom: none;
     }
 
-    #resume > div > div > div:nth-child(0n+2) {
+    #resume>div>div>div:nth-child(0n+2) {
       width: 60%;
       padding-left: 10px;
 
     }
 
-    #resume > div > div > div:first-child {
-        width: 30%;
-        text-align: right;
-        padding-right: 10px;
-        color: #a0a0a0 !important;
+    #resume>div>div>div:first-child {
+      width: 30%;
+      text-align: right;
+      padding-right: 10px;
+      color: #a0a0a0 !important;
     }
 
-    #resume > div > div > div:nth-child(0n+2) > div:last-child {
+    #resume>div>div>div:nth-child(0n+2)>div:last-child {
       color: #404040 !important;
       margin-bottom: 4px;
     }
-    #resume > div > div > div:nth-child(0n+2) > div:last-child::before {
+
+    #resume>div>div>div:nth-child(0n+2)>div:last-child::before {
       content: "→ ";
     }
 
@@ -444,31 +483,34 @@
       margin-bottom: 10px;
     }
 
-    #resume div.section_title > div > h2 {
+    #resume div.section_title>div>h2 {
       color: #008080 !important;
       font-family: inherit;
 
     }
 
     .name_section img {
-       border-radius: 50%;
-       width: 180px;
-       margin-right: 0px;
+      border-radius: 50%;
+      width: 180px;
+      margin-right: 0px;
     }
-    .name_section > div:last-child {
+
+    .name_section>div:last-child {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
     }
+
     .grey {
       color: #808080 !important;
     }
+
     .mid-grey {
       color: #404040 !important;
     }
 
-    .name_section > div:last-child > h1 {
+    .name_section>div:last-child>h1 {
       margin-top: 0px;
       margin-bottom: 10px;
     }
@@ -485,322 +527,370 @@
       .pagebreak {
         border: none;
         page-break-before: always;
-      } /* page-break-after works, as well */
+      }
+
+      /* page-break-after works, as well */
       a {
         text-decoration: none;
       }
     }
+
+
+    .container {
+      display: flex;
+    }
+
   </style>
 
 </head>
 
 <body>
 
-<section id="resume">
-  <div>
-    <div class="name_section">
-      <div><img src="portrait_circle_small.png" alt="."></div>
+  <div class="container">
+
+    <section id="resume">
       <div>
-        <h1>Lucas Habersaat</h1><br>
-        <span class="grey">
-          Curriculum Vitae | 21.3.2023
-        </span>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="">
-    <div class="">
-      <div>summary</div>
-      <div class="text">
-        I am a young <strong>computer science</strong> graduate with a major in computer graphics, who grew up in <strong>Switzerland</strong> and studies at <strong>ETH Zurich</strong>.
-      </div>
-    </div>
-
-    <div class="">
-      <div>values</div>
-      <div class="text">
-        For me quality and constant <strong>growth</strong> are essential. I value <strong>reliance</strong> and open <strong>communication</strong> in a team and love to do things right and proper. Being able to quickly adapt and learn fast with <strong>optimism and motivation</strong> belong to my strengths.
-      </div>
-    </div>
-    <div class="hide">
-      <div>skills</div>
-      <div class="text">
-        Having great interest in visual computing, <strong>graphics</strong> belongs to my core skills.
-        Additionally, through work I gained a lot of experience in <strong>web development</strong> from front to end.
-      </div>
-    </div>
-      <div class="hide">
-      <div>game dev</div>
-      <div class="text">
-        <strong>Games and stories</strong> have always been a part of my life and I have spent considerable amount to enjoy and create them. Next to personal dabbling, I was able to attend a game programming course at ETH.  In a team of five, we could design and build our <strong><a href="https://violetseastudio.itch.io/dustoff" target="_blank">own game</a></strong> from scratch. (https://violetseastudio.itch.io/dustoff)
-      </div>
-    </div>
-  </div>
-
-  <div>
-    <div>
-      <div>birthdate</div>
-      <div>28.01.1997</div>
-    </div>
-    <div>
-      <div>address</div>
-      <div>Marktstrasse 12<br>8500 Frauenfeld<br>Switzerland</div>
-    </div>
-
-    <div>
-      <div>e-mail</div>
-      <div><a href="mailto:lucas@habersaat.ch">lucas@habersaat.ch</a></div>
-    </div>
-    <div>
-      <div>mobile</div>
-      <div>+41 79 590 67 97</div>
-    </div>
-  </div>
-
-  <div class="pagebreak"></div>
-
-  <div>
-    <div class="section_title">
-      <div></div>
-      <div><h2>Education</h2></div>
-    </div>
-    <div>
-      <div>2019 - now</div>
-      <div>
-        <div>Master of Computer Science</div>
-        <div>ETH Zurich</div>
-      </div>
-    </div>
-    <div>
-      <div>2015 - 2020</div>
-      <div>
-        <div>Bachelor of Computer Science</div>
-        <div>ETH Zurich</div>
-      </div>
-
-
-    </div>
-    <div>
-      <div>2012 - 2015</div>
-      <div>
-        <div>Qualification for University</div>
-        <div>Kantonsschule Frauenfeld</div>
-      </div>
-    </div>
-  </div>
-
-
-  <div>
-    <div class="section_title">
-      <div></div>
-      <div><h2>Work Experience</h2></div>
-    </div>
-    <div>
-      <div>August - October 2021</div>
-      <div>
-        <div>Assistant Lecturer</div>
-        <div>Kantonsschule Frauenfeld</div>
-      </div>
-    </div>
-    <div>
-      <div>April 2019 - May 2023</div>
-      <div>
-        <div>Side Job Web Application</div>
-        <div><a href="https://baselfilmfestival.ch"target="_blank">Gässli Filmfestival</a></div>
-      </div>
-    </div>
-    <div>
-      <div>March 2020 - April 2021</div>
-      <div>
-        <div>Internship SW Engineering</div>
-        <div><a href="https://puzzle.ch" target="_blank">Puzzle ITC</a></div>
-      </div>
-    </div>
-    <div>
-      <div>August 2015</div>
-      <div>
-        <div>Internship GUI</div>
-        <div><a href="https://www.ghielmetti.ch/de/startseite-1.html" target="_blank">Ghielmetti AG</a></div>
-      </div>
-    </div>
-
-
-  </div>
-
-  <div>
-    <div class="section_title">
-      <div></div>
-      <div><h2>Other Activities</h2></div>
-    </div>
-    <div>
-      <div>February - July 2018</div>
-      <div>Tutoring at Kantonsschule Frauenfeld</div>
-    </div>
-    <div>
-      <div>2016 - 2021</div>
-      <div>Co-leading of yearly children summer camps</div>
-    </div>
-    <div>
-      <div>2020 - now</div>
-      <div>Club board (<a href="https://scpfadifrauenfeld.ch/" target="_blank">SC Pfadi Frauenfeld</a>, sports)</div>
-    </div>
-    <div>
-      <div>2022 - 2023</div>
-      <div>Handball Trainer for Kids</div>
-    </div>
-  </div>
-
-  <div class="pagebreak"> </div>
-
-  <div>
-    <div class="section_title">
-      <div></div>
-      <div><h2>Skills</h2></div>
-    </div>
-    <div>
-      <div>language</div>
-      <div>German (native), English (proficient), French (mediocre)</div>
-    </div>
-    <div>
-      <div>programming</div>
-      <div>C# | C++ | Python | Java | Rust | Ruby</div>
-    </div>
-    <div>
-      <div>web related</div>
-      <div>HTML | CSS | JS | TS | PHP | SQL & various frameworks</div>
-    </div>
-    <div>
-      <div>game engines</div>
-      <div>Unity, MonoGame, Godot</div>
-    </div>
-    <!--<div>
-      <div>machine learning</div>
-      <div>PyTorch | TensorFlow</div>
-    </div>-->
-  </div>
-
-  <div id="projects">
-    <div class="section_title">
-      <div></div>
-      <div><h2>Projects</h2></div>
-    </div>
-    <div>
-      <div>master thesis<br>ETH Zurich</div>
-      <div>
-        <div>Emergent Stories in AR Environments</div>
-        <div><a href="https://gtc.inf.ethz.ch/research/game-technology-research/emergent-narrative.html">https://gtc.inf.ethz.ch/research/game-technology-research/emergent-narrative.html</a></div>
-      </div>
-    </div>
-    <div>
-      <div>game<br>course at ETH Zurich</div>
-      <div>
-        <div>Dust Off</div>
-        <div><a href="https://violetseastudio.itch.io/dustoff" target="_blank">https://violetseastudio.itch.io/dustoff</a></div>
-      </div>
-    </div>
-    <div>
-      <div>bachelor & semester thesis<br>ETH Zurich</div>
-      <div>
-        <div>Inverse Terrain Simulation</div>
-        <div><a href="https://cgl.ethz.ch/" target="_blank">Computer Graphics Lab</a></div>
-      </div>
-    </div>
-    <div>
-      <div>web app<br>Puzzle ITC</div>
-      <div>
-        <div><a href="https://github.com/puzzle/cryptopus" target="_blank">Cryptopus</a> (open source)</div>
-        <div><a href="https://github.com/puzzle/cryptopus">https://github.com/puzzle/cryptopus</a></div>
-
-      </div>
-    </div>
-    <div>
-      <div>personal web app</div>
-      <div>
-        <div>Spoilerfree Online Glossary</div>
-        <div> <a href="https://glossary.lucashabersaat.ch" target="_blank">glossary.lucashabersaat.ch</a></div>
-      </div>
-    </div>
-
-    <div>
-      <div>website</div>
-      <div>
-        <div>Personal website & blog</div>
-        <div>
-          <a href="https://lucashabersaat.ch" target="_blank">lucashabersaat.ch</a>
+        <div class="name_section">
+          <div><img src="portrait_circle_small.png" alt="."></div>
+          <div>
+            <h1>Lucas Habersaat</h1><br>
+            <span class="grey">
+              Curriculum Vitae | 30.5.2023
+            </span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div>
-      <div>various</div>
-      <div>Course projects</div>
-    </div>
 
+      <div class="">
+        <div class="">
+          <div>summary</div>
+          <div class="text">
+            I am a young, Swiss <strong>computer scientist</strong> with a major in visual computing from <strong>ETH
+              Zurich</strong>,
+            who is intrigued by geo science and software development.
+          </div>
+        </div>
+
+        <div class="">
+          <div>values</div>
+          <div class="text">
+            For me quality, valuable work, and constant <strong>growth</strong> are essential.
+            Being able to quickly adapt and learn fast with <strong>enthusiasm and motivation</strong> belong to my
+            strengths.
+          </div>
+        </div>
+        <div class="">
+          <div>team</div>
+          <div class="text">
+            I value <strong>reliance</strong> and open <strong>communication</strong> in a team
+            where I try to live a culture with constructive criticism and cordiality.
+          </div>
+        </div>
+        <div class="">
+          <div>skills</div>
+          <div class="text">
+              <strong>Software development</strong> and computer <strong>graphics</strong> belong to my core skills.
+              With experience with <strong>various languages and frameworks</strong>, from Rust, to machine learning
+              frameworks, no new technology poses a difficulty.
+          </div>
+        </div>
+        <div class="hide">
+          <div>game dev</div>
+          <div class="text">
+            <strong>Games and stories</strong> have always been a part of my life and I have spent considerable amount
+            to enjoy and create them. Next to personal dabbling, I was able to attend a game programming course at ETH.
+            In a team of five, we could design and build our <strong><a href="https://violetseastudio.itch.io/dustoff"
+                target="_blank">own game</a></strong> from scratch. (https://violetseastudio.itch.io/dustoff)
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <div>birthdate</div>
+          <div>28.01.1997</div>
+        </div>
+        <div>
+          <div>address</div>
+          <div>Marktstrasse 12<br>8500 Frauenfeld<br>Switzerland</div>
+        </div>
+
+        <div>
+          <div>e-mail</div>
+          <div><a href="mailto:lucas@habersaat.ch">lucas@habersaat.ch</a></div>
+        </div>
+        <div>
+          <div>mobile</div>
+          <div>+41 79 590 67 97</div>
+        </div>
+      </div>
+
+      <div class="pagebreak"></div>
+
+      <div>
+        <div class="section_title">
+          <div></div>
+          <div>
+            <h2>Education</h2>
+          </div>
+        </div>
+        <div>
+          <div>2019 - now</div>
+          <div>
+            <div>Master of Computer Science</div>
+            <div>ETH Zurich</div>
+          </div>
+        </div>
+        <div>
+          <div>2015 - 2020</div>
+          <div>
+            <div>Bachelor of Computer Science</div>
+            <div>ETH Zurich</div>
+          </div>
+
+
+        </div>
+        <div>
+          <div>2012 - 2015</div>
+          <div>
+            <div>Qualification for University</div>
+            <div>Kantonsschule Frauenfeld</div>
+          </div>
+        </div>
+      </div>
+
+
+      <div>
+        <div class="section_title">
+          <div></div>
+          <div>
+            <h2>Work Experience</h2>
+          </div>
+        </div>
+        <div>
+          <div>August - October 2021</div>
+          <div>
+            <div>Assistant Lecturer</div>
+            <div>Kantonsschule Frauenfeld</div>
+          </div>
+        </div>
+        <div>
+          <div>April 2019 - May 2023</div>
+          <div>
+            <div>Side Job Web Application</div>
+            <div><a href="https://baselfilmfestival.ch" target="_blank">Gässli Filmfestival</a></div>
+          </div>
+        </div>
+        <div>
+          <div>March 2020 - April 2021</div>
+          <div>
+            <div>Internship SW Engineering</div>
+            <div><a href="https://puzzle.ch" target="_blank">Puzzle ITC</a></div>
+          </div>
+        </div>
+        <div>
+          <div>August 2015</div>
+          <div>
+            <div>Internship GUI</div>
+            <div><a href="https://www.ghielmetti.ch/de/startseite-1.html" target="_blank">Ghielmetti AG</a></div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div>
+        <div class="section_title">
+          <div></div>
+          <div>
+            <h2>Other Activities</h2>
+          </div>
+        </div>
+        <div>
+          <div>February - July 2018</div>
+          <div>Tutoring at Kantonsschule Frauenfeld</div>
+        </div>
+        <div>
+          <div>2016 - 2021</div>
+          <div>Co-leading of yearly children summer camps</div>
+        </div>
+        <div>
+          <div>2020 - now</div>
+          <div>Club board (<a href="https://scpfadifrauenfeld.ch/" target="_blank">SC Pfadi Frauenfeld</a>, sports)
+          </div>
+        </div>
+        <div>
+          <div>2022 - 2023</div>
+          <div>Handball Trainer for Kids</div>
+        </div>
+      </div>
+
+      <div class="pagebreak"> </div>
+
+      <div>
+        <div class="section_title">
+          <div></div>
+          <div>
+            <h2>Skills</h2>
+          </div>
+        </div>
+        <div>
+          <div>language</div>
+          <div>German (native), English (proficient), French (mediocre)</div>
+        </div>
+        <div>
+          <div>programming</div>
+          <div>C# | C++ | Python | Java | Rust | Ruby</div>
+        </div>
+        <div>
+          <div>web related</div>
+          <div>HTML | CSS | JS | TS | PHP | SQL & various frameworks</div>
+        </div>
+        <div>
+          <div>game engines</div>
+          <div>Unity, MonoGame, Godot</div>
+        </div>
+        <div>
+          <div>machine learning</div>
+          <div>PyTorch | TensorFlow</div>
+        </div>
+      </div>
+
+      <div id="projects">
+        <div class="section_title">
+          <div></div>
+          <div>
+            <h2>Projects</h2>
+          </div>
+        </div>
+        <div>
+          <div>master thesis<br>ETH Zurich</div>
+          <div>
+            <div>Emergent Stories in AR Environments</div>
+            <div><a
+                href="https://gtc.inf.ethz.ch/research/game-technology-research/emergent-narrative.html">https://gtc.inf.ethz.ch/research/game-technology-research/emergent-narrative.html</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>game<br>course at ETH Zurich</div>
+          <div>
+            <div>Dust Off</div>
+            <div><a href="https://violetseastudio.itch.io/dustoff"
+                target="_blank">https://violetseastudio.itch.io/dustoff</a></div>
+          </div>
+        </div>
+        <div>
+          <div>bachelor & semester thesis<br>ETH Zurich</div>
+          <div>
+            <div>Inverse Terrain Simulation</div>
+            <div><a href="https://cgl.ethz.ch/" target="_blank">Computer Graphics Lab</a></div>
+          </div>
+        </div>
+        <div>
+          <div>web app<br>Puzzle ITC</div>
+          <div>
+            <div><a href="https://github.com/puzzle/cryptopus" target="_blank">Cryptopus</a> (open source)</div>
+            <div><a href="https://github.com/puzzle/cryptopus">https://github.com/puzzle/cryptopus</a></div>
+
+          </div>
+        </div>
+        <div>
+          <div>personal web app</div>
+          <div>
+            <div>Spoilerfree Online Glossary</div>
+            <div> <a href="https://glossary.lucashabersaat.ch" target="_blank">glossary.lucashabersaat.ch</a></div>
+          </div>
+        </div>
+
+        <div>
+          <div>website</div>
+          <div>
+            <div>Personal website & blog</div>
+            <div>
+              <a href="https://lucashabersaat.ch" target="_blank">lucashabersaat.ch</a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div>various</div>
+          <div>Course projects</div>
+        </div>
+
+      </div>
+
+      <div class="pagebreak"></div>
+
+      <div>
+        <div class="section_title">
+          <div></div>
+          <div>
+            <h2>Hobbies & Interests</h2>
+          </div>
+        </div>
+
+        <div>
+          <div>reading</div>
+          <div>Mainly fantasy epics & non-fiction like science, psychology & productivity</div>
+        </div>
+        <div>
+          <div>coding</div>
+          <div>Personal projects in area of web-apps, terrain generation, game design and computer graphics in general
+          </div>
+        </div>
+        <div>
+          <div>sport</div>
+          <div>Handball since 3rd grade, swimming, jogging</div>
+        </div>
+        <div>
+          <div>music</div>
+          <div>Playing piano, <br>listening to epic & film music in particular</div>
+        </div>
+        <div>
+          <div>gaming</div>
+          <div>Too much honestly</div>
+        </div>
+        <div>
+          <div>d&d</div>
+          <div>As a player and as a DM</div>
+        </div>
+        <div>
+          <div>astronomy</div>
+          <div>Astro photography, star gazing</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="section_title">
+          <div></div>
+          <div>
+            <h2>References</h2>
+          </div>
+        </div>
+        <div>
+          <div>Gässli Filmfestival</div>
+          <div>Giacun Caduff<br><a href="mailto:jab@jabpix.com">jab@jabpix.com</a><br>+41 78 639 84 08</div>
+        </div>
+        <div>
+          <div>Puzzle ITC</div>
+          <div>Pascal Simon<br><a href="mailto:simon@puzzle.ch">simon@puzzle.ch</a><br>+41 78 730 57 67</div>
+        </div>
+        <div>
+          <div>Supervisor, CGL at ETH (former)</div>
+          <div>Guillaume Cordonnier<br><a
+              href="mailto:guillaume.cordonnier@inria.fr">guillaume.cordonnier@inria.fr</a><br>+33 4 92 38 78 40</div>
+        </div>
+        <div>
+          <div>Supervisor, CGL at ETH</div>
+          <div>Jingwei Tang<br><a href="mailto:jingwei.tang@inf.ethz.ch">jingwei.tang@inf.ethz.ch</a><br>+41 44 632 07
+            56</div>
+        </div>
+      </div>
+    </section>
   </div>
-
-  <div class="pagebreak"></div>
-
-  <div>
-    <div class="section_title">
-      <div></div>
-      <div><h2>Hobbies & Interests</h2></div>
-    </div>
-
-    <div>
-      <div>reading</div>
-      <div>Mainly fantasy epics & non-fiction like science, psychology & productivity</div>
-    </div>
-    <div>
-      <div>coding</div>
-      <div>Personal projects in area of web-apps, terrain generation, game design and computer graphics in general</div>
-    </div>
-    <div>
-      <div>sport</div>
-      <div>Handball since 3rd grade, swimming, jogging</div>
-    </div>
-    <div>
-      <div>music</div>
-      <div>Playing piano, <br>listening to epic & film music in particular</div>
-    </div>
-    <div>
-      <div>gaming</div>
-      <div>Too much honestly</div>
-    </div>
-    <div>
-      <div>d&d</div>
-      <div>As a player and as a DM</div>
-    </div>
-    <div>
-      <div>astronomy</div>
-      <div>Astro photography, star gazing</div>
-    </div>
-  </div>
-
-  <div>
-    <div class="section_title">
-      <div></div>
-      <div><h2>References</h2></div>
-    </div>
-    <div>
-      <div>Gässli Filmfestival</div>
-      <div>Giacun Caduff<br><a href="mailto:jab@jabpix.com">jab@jabpix.com</a><br>+41 78 639 84 08</div>
-    </div>
-    <div>
-      <div>Puzzle ITC</div>
-      <div>Pascal Simon<br><a href="mailto:simon@puzzle.ch">simon@puzzle.ch</a><br>+41 78 730 57 67</div>
-    </div>
-    <div>
-      <div>Supervisor, CGL at ETH (former)</div>
-      <div>Guillaume Cordonnier<br><a href="mailto:guillaume.cordonnier@inria.fr">guillaume.cordonnier@inria.fr</a><br>+33 4 92 38 78 40</div>
-    </div>
-    <div>
-      <div>Supervisor, CGL at ETH</div>
-      <div>Jingwei Tang<br><a href="mailto:jingwei.tang@inf.ethz.ch">jingwei.tang@inf.ethz.ch</a><br>+41 44 632 07 56</div>
-    </div>
-  </div>
-</section>
 
 </body>
+
 </html>
